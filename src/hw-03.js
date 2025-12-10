@@ -1,10 +1,11 @@
 // Завдання 1.
 const firstNum = +prompt('Введіть перше число');
 const secondNum = +prompt('Введіть ще одне число');
-if ((firstNum + secondNum) % 5 === 0) {
-    alert('Сума чисел ' + firstNum + ' i ' + secondNum + ' кратна 5')
+const numberToCheck = 5;
+if ((firstNum + secondNum) % numberToCheck === 0) {
+    alert('Сума чисел ' + firstNum + ' i ' + secondNum + ' кратна ' + numberToCheck)
 } else {
-    alert('Сума не кратна 5')
+    alert('Сума не кратна ' + numberToCheck)
 }
 
 // Завдання 2.
@@ -33,11 +34,13 @@ switch (itemMenu) {
 // // Завдання 3.
 const amount = +prompt("Введіть суму покупки");
 let discontAmount;
+const discont3 = amount * 0.03;
+const discont5 = amount * 0.05;
 if (amount > 800) {
-  discontAmount = amount - amount * 0.05;
+  discontAmount = amount - discont5;
   alert("Сума вашої покупки зі знижкою 5% - " + discontAmount);
 } else if (amount < 800 && amount >= 500) {
-  discontAmount = amount - amount * 0.03;
+  discontAmount = amount - discont3;
   alert("Сума вашої покупки зі знижкою 3% - " + discontAmount);
 } else if (amount > 0 && amount < 500) {
   discontAmount = amount;
