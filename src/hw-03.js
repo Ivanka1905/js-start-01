@@ -49,4 +49,4 @@ if (amount > 800) {
 // Завдання 4.
 const number1 = +prompt('Введіть перше число');
 const number2 = +prompt('Введіть ще одне число');
-console.log(number1 % number2 === 0 || false)
+console.log(number1 % number2 === 0)
