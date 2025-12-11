@@ -40,10 +40,10 @@ const discont3 = 3;
 const discont5 = 5;
 if (amount > 800) {
   discontAmount = amount - (amount / 100) * discont5;
-  alert("Сума вашої покупки зі знижкою 5% - " + discontAmount);
+  alert("Сума вашої покупки зі знижкою " + discont5 + "% - " + discontAmount);
 } else if (amount < 800 && amount >= 500) {
   discontAmount = amount - (amount / 100) * discont3;
-  alert("Сума вашої покупки зі знижкою 3% - " + discontAmount);
+  alert("Сума вашої покупки зі знижкою " + discont3 + "% - " + discontAmount);
 } else if (amount > 0 && amount < 500) {
   discontAmount = amount;
   alert("Сума вашої покупки - " + discontAmount);
